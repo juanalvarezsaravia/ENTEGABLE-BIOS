@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import axios from 'axios';
@@ -15,18 +13,6 @@ function Search() {
     } catch (error) {
       console.error(error);
     }
-=======
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Cambio aquí
-
-function Search() {
-  const [query, setQuery] = useState('');
-  const navigate = useNavigate(); // Cambio aquí
-
-  const handleSearch = () => {
-    // Redirige al componente Results con la consulta de búsqueda como parámetro
-    navigate(`/results?q=${query}`); // Cambio aquí
->>>>>>> origin/main
   };
 
   return (
