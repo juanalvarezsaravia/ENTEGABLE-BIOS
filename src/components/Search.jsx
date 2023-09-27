@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'; // Importa useNavigate en lugar de useHistory
 import axios from 'axios';
 
 function Search() {
   const [query, setQuery] = useState('');
-  const history = useHistory();
+  const navigate = useNavigate(); // Utiliza useNavigate en lugar de useHistory
 
   const handleSearch = async () => {
     try {
       const response = await axios.get(`https://api.github.com/search/repositories?q=${query}`);
-      history.push(`/results?q=${query}`, { results: response.data.items });
+      navigate(`/results?q=${query}`, { state: { results: response.data.items } }); // Utiliza navigate para cambiar la ruta
     } catch (error) {
       console.error(error);
     }
