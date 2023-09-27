@@ -1,4 +1,3 @@
-// src/components/Details.js
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
@@ -30,7 +29,7 @@ function Details() {
       <h3>{repoDetails.name}</h3>
       <p>{repoDetails.description}</p>
       <p>Stars: {repoDetails.stargazers_count}</p>
-      {/* Add more details as needed */}
+      {/* Agrega más detalles según sea necesario */}
     </div>
   );
 }
