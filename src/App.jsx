@@ -1,6 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Search from './components/Search';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Importar BrowserRouter, Routes y Route
+import Search from "./components/Search";
 import Results from './components/Results';
 import Details from './components/Details';
 
@@ -8,11 +8,11 @@ function App() {
   return (
     <Router>
       <div>
-        <Switch>
-          <Route path="/" exact component={Search} />
-          <Route path="/results" component={Results} />
-          <Route path="/details/:id" component={Details} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Search />} />
+          <Route path="/results" element={<Results />} />
+          <Route path="/details/:id" element={<Details />} />
+        </Routes>
       </div>
     </Router>
   );
