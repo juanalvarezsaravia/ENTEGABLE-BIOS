@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 function Details() {
   const { id } = useParams();
   const [repoDetails, setRepoDetails] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchRepoDetails = async () => {
@@ -19,6 +20,10 @@ function Details() {
     fetchRepoDetails();
   }, [id]);
 
+  const goBackToResults = () => {
+    navigate('/results');
+  };
+
   if (!repoDetails) {
     return null;
   }
@@ -29,6 +34,7 @@ function Details() {
       <h3>{repoDetails.name}</h3>
       <p>{repoDetails.description}</p>
       <p>Stars: {repoDetails.stargazers_count}</p>
+      <button onClick={goBackToResults}>Back to Results</button>
     </div>
   );
 }
