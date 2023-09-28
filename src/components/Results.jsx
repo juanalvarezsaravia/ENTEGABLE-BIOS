@@ -3,7 +3,7 @@ import { useLocation, Link } from 'react-router-dom';
 
 function Results() {
   const location = useLocation();
-  const { state } = location; // Cambio de location.state a state
+  const { state } = location;
 
   if (!state?.results) {
     return null;

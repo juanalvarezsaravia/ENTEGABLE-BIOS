@@ -29,7 +29,6 @@ function Details() {
       <h3>{repoDetails.name}</h3>
       <p>{repoDetails.description}</p>
       <p>Stars: {repoDetails.stargazers_count}</p>
-      {/* Agrega más detalles según sea necesario */}
     </div>
   );
 }
