@@ -21,14 +21,15 @@ function Search() {
 
 
   return (
-    <div>
+    <div className='Search'>
+      <h1>Buscador</h1>
       <input
         type="text"
         placeholder="Search for a GitHub repository"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
-      <button onClick={handleSearch}>Search</button>
+      <button onClick={handleSearch}>Buscar</button>
     </div>
   );
 }

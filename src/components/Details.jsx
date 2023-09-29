@@ -29,12 +29,12 @@ function Details() {
   }
 
   return (
-    <div>
-      <h2>Repository Details</h2>
+    <div className='Details'>
+      <h2>Detalles del repositorio</h2>
       <h3>{repoDetails.name}</h3>
       <p>{repoDetails.description}</p>
-      <p>Stars: {repoDetails.stargazers_count}</p>
-      <button onClick={goBackToResults}>Back to Results</button>
+      <p>Estrellas: {repoDetails.stargazers_count}</p>
+      <button onClick={goBackToResults}>Volver a resultados</button>
     </div>
   );
 }

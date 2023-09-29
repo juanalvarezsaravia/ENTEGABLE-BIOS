@@ -8,15 +8,15 @@ function Results() {
 
 
   if (!results || results.length === 0) {
-    return <div>No results found.</div>;
+    return <div>No se encontro resultado.</div>;
   }
 
   const goBackToSearch = () => {
     navigate('/');
   };
   return (
-    <div>
-      <h2>Search Results</h2>
+    <div className='Results'>
+      <h2>Resultados de busqueda</h2>
       <ul>
         {results.map((result) => (
           <li key={result.id}>
@@ -24,7 +24,7 @@ function Results() {
           </li>
         ))}
       </ul>
-      <button onClick={goBackToSearch}>Back to Search</button>
+      <button onClick={goBackToSearch}>Volver a buscador</button>
 
 
     </div>
