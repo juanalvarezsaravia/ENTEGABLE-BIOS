@@ -16,7 +16,7 @@ function Results() {
   };
   return (
     <div className='Results'>
-      <h2>Resultados de busquedas</h2>
+      <h2>Resultados de busqueda.</h2>
       <ul>
         {results.map((result) => (
           <li key={result.id}>
