@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { SearchContext } from '../SearchContext';
 
-function Search() {
+
+const Search = () => {
   const [query, setQuery] = useState('');
   const navigate = useNavigate();
   const { setResults } = useContext(SearchContext);
@@ -22,10 +23,10 @@ function Search() {
 
   return (
     <div className='Search'>
-      <h1>BUSCADOR</h1>
+      <h1>BUSCAR</h1>
       <input
         type="text"
-        placeholder="Buscar"
+        placeholder="SEARCH "
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />

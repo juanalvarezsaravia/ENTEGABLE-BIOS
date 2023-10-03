@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-function Details() {
+
+const Details = () => {
   const { id } = useParams();
   const [repoDetails, setRepoDetails] = useState(null);
   const navigate = useNavigate();
@@ -30,11 +31,11 @@ function Details() {
 
   return (
     <div className='Details'>
-      <h2>Detalles del repositorio</h2>
+      <h2>Detalles</h2>
       <h3>{repoDetails.name}</h3>
       <p>{repoDetails.description}</p>
       <p>Estrellas: {repoDetails.stargazers_count}</p>
-      <button onClick={goBackToResults}>VOLVER</button>
+      <button onClick={goBackToResults}> VOLVER</button>
     </div>
   );
 }
