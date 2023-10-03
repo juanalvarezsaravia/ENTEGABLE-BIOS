@@ -24,7 +24,7 @@ function Results() {
           </li>
         ))}
       </ul>
-      <button onClick={goBackToSearch}>Volver a buscador</button>
+      <button onClick={goBackToSearch}>VOLVER</button>
 
 
     </div>

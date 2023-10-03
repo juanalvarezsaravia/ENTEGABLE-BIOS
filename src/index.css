@@ -1,7 +1,10 @@
 * {
   margin: 0;
-  padding: 0;
+  padding: 15;
   box-sizing: border-box;
+  list-style: none;
+  color: white;
+  background-color: black;
 }
 
 body {
@@ -9,6 +12,7 @@ body {
   margin: auto;
   padding: 20px;
   box-sizing: border-box;
+
 }
 
 a {
@@ -43,8 +47,10 @@ a {
 
 button {
   cursor: pointer;
+  border-radius: 5px;
 }
 
 input {
   cursor: pointer;
+  border-radius: 6px;
 }

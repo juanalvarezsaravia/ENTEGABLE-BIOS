@@ -34,7 +34,7 @@ function Details() {
       <h3>{repoDetails.name}</h3>
       <p>{repoDetails.description}</p>
       <p>Estrellas: {repoDetails.stargazers_count}</p>
-      <button onClick={goBackToResults}>Volver a resultados</button>
+      <button onClick={goBackToResults}>VOLVER</button>
     </div>
   );
 }
