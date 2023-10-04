@@ -3,7 +3,11 @@
   padding: 15;
   box-sizing: border-box;
   list-style: none;
+<<<<<<< HEAD
   color: white;
+=======
+  color: white; 
+>>>>>>> f690d9f (Committing my local changes)
   background-color: black;
 }
 
@@ -12,7 +16,11 @@ body {
   margin: auto;
   padding: 20px;
   box-sizing: border-box;
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> f690d9f (Committing my local changes)
 }
 
 a {
@@ -47,7 +55,11 @@ a {
 
 button {
   cursor: pointer;
+<<<<<<< HEAD
   border-radius: 5px;
+=======
+  
+>>>>>>> f690d9f (Committing my local changes)
 }
 
 input {
