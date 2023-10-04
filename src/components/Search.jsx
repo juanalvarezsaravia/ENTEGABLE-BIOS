@@ -25,7 +25,7 @@ function Search() {
       <h1>BUSCADOR</h1>
       <input
         type="text"
-        placeholder="Search for a GitHub repository"
+        placeholder="Search"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
