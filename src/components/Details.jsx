@@ -35,7 +35,7 @@ const Details = () => {
       <h3>{repoDetails.name}</h3>
       <p>{repoDetails.description}</p>
       <p>Estrellas: {repoDetails.stargazers_count}</p>
-      <button onClick={goBackToResults}> VOLVER</button>
+      <button onClick={goBackToResults}> Volver</button>
     </div>
   );
 }
