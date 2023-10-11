@@ -31,7 +31,7 @@ const Details = () => {
 
   return (
     <div className='Details'>
-      <h2>Detalles</h2>
+      <h2>DETALLES</h2>
       <h3>{repoDetails.name}</h3>
       <p>{repoDetails.description}</p>
       <p>Estrellas: {repoDetails.stargazers_count}</p>
