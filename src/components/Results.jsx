@@ -24,7 +24,7 @@ const Results = () => {
           </li>
         ))}
       </ul>
-      <button onClick={goBackToSearch}>VOLVER</button>
+      <button onClick={goBackToSearch}>Volver</button>
 
 
     </div>
