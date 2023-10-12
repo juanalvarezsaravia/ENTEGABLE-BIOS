@@ -16,7 +16,7 @@ const Results = () => {
   };
   return (
     <div className='Results'>
-      <h2>Resultados de Busqueda</h2>
+      <h2>RESULTADOS DE BUSQUEDA</h2>
       <ul>
         {results.map((result) => (
           <li key={result.id}>
