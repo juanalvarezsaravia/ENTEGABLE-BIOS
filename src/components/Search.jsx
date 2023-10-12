@@ -23,7 +23,7 @@ const Search = () => {
 
   return (
     <div className='Search'>
-      <h1>BUSCAR</h1>
+      <h1>BUSCADOR</h1>
       <input
         type="text"
         placeholder="Search"
