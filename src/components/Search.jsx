@@ -5,32 +5,30 @@ import { SearchContext } from '../SearchContext';
 
 
 const Search = () => {
-  const [query, setQuery] = useState('');
+  const [username, setUsername] = useState('');
   const navigate = useNavigate();
   const { setResults } = useContext(SearchContext);
 
   const handleSearch = async () => {
     try {
-      const response = await axios.get(`https://api.github.com/search/repositories?q=${query}`);
-      setResults(response.data.items);
+      const response = await axios.get(`https://api.github.com/users/${username}/repos`);
+      setResults(response.data);
       navigate(`/results`);
     } catch (error) {
       console.error(error);
     }
   };
 
-
-
   return (
     <div className='Search'>
-      <h1>BUSCADOR</h1>
+      <h1>SEARCH</h1>
       <input
         type="text"
-        placeholder="Search"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
+        placeholder="Enter GitHub Username"
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
       />
-      <button onClick={handleSearch}>Buscar</button>
+      <button onClick={handleSearch}>SEARCH</button>
     </div>
   );
 }

@@ -1,19 +1,17 @@
 * {
   margin: 0;
-  padding: 10;
+  padding: 0;
   box-sizing: border-box;
   list-style: none;
-  color: rgb(255, 255, 255);
+  color: black;
 }
 
 body {
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
   box-sizing: border-box;
-  background-image: url('/images/background-image.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: greenyellow;
+  height: 100%;
+  margin: 0;
+
 }
 
 a {
@@ -49,11 +47,249 @@ a {
 button {
   cursor: pointer;
   border-radius: 5px;
-  color: black;
+  padding: 5px;
 }
 
 input {
   cursor: pointer;
   border-radius: 6px;
+  padding: 5px;
+}
+
+
+header {
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.AppContainer {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.Footer {
+  background-color: rgb(5, 255, 5);
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+}
+
+.Footer h3 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.Register {
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.Register h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
   color: black;
+}
+
+.Register form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Register TextField {
+  margin-bottom: 15px;
+}
+
+.Register button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #47925e;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Register button:hover {
+  background-color: #09f03b;
+}
+
+.Register button:last-of-type {
+  margin-top: 10px;
+}
+
+.Login {
+  width: 350px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.Login h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: black;
+}
+
+.Login form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Login TextField {
+  margin-bottom: 15px;
+}
+
+.Login button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #47925e;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Login button:hover {
+  background-color: #09f03b;
+}
+
+.Login button:last-of-type {
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .Register,
+  .Login {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .Details,
+  .Search,
+  .Results,
+  .About,
+  .Contact {
+    gap: 15px;
+  }
+
+  button,
+  input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .Register button,
+  .Login button,
+  .About button,
+  .Contact button {
+    width: auto;
+  }
+}
+
+.Contact {
+  width: 300px;
+  border: 1px solid #e5e5e5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Contact h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.Contact p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.Contact button {
+  background-color: #47925e;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Contact button:hover {
+  background-color: #09f03b;
+}
+
+
+.Contact svg {
+  fill: #47925e;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 10px;
+}
+
+.About {
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.About h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.About p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #555;
+}
+
+.About button {
+  background-color: #47925e;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.About button:hover {
+  background-color: #09f03b;
 }
