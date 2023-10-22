@@ -4,8 +4,6 @@ import axios from 'axios';
 import { SearchContext } from '../SearchContext';
 import Button from './Button';
 
-
-
 const Search = () => {
 
   const [username, setUsername] = useState('');
@@ -30,7 +28,7 @@ const Search = () => {
       setResults(response.data);
       navigate(`/results`);
     } catch (error) {
-      console.error(error);
+      alert('A ocurrido un error.');
     }
   };
 
