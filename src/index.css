@@ -56,7 +56,6 @@ input {
   padding: 5px;
 }
 
-
 header {
   background-color: white;
   text-align: center;
@@ -176,43 +175,6 @@ header {
   margin-top: 10px;
 }
 
-@media only screen and (max-width: 767px) {
-
-  .Register,
-  .Login {
-    width: 90%;
-    margin: 20px auto;
-  }
-
-  header {
-    flex-direction: column;
-    height: auto;
-    padding: 10px;
-  }
-
-  .Details,
-  .Search,
-  .Results,
-  .About,
-  .Contact {
-    gap: 15px;
-  }
-
-  button,
-  input {
-    padding: 10px;
-    font-size: 16px;
-    width: 100%;
-  }
-
-  .Register button,
-  .Login button,
-  .About button,
-  .Contact button {
-    width: auto;
-  }
-}
-
 .Contact {
   width: 300px;
   border: 1px solid #e5e5e5;
@@ -292,4 +254,41 @@ header {
 
 .About button:hover {
   background-color: #09f03b;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .Register,
+  .Login {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .Details,
+  .Search,
+  .Results,
+  .About,
+  .Contact {
+    gap: 15px;
+  }
+
+  button,
+  input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .Register button,
+  .Login button,
+  .About button,
+  .Contact button {
+    width: auto;
+  }
 }
