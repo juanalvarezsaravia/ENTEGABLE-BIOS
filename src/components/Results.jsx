@@ -28,6 +28,13 @@ const Results = () => {
     return (
         <div className='Results'>
             <h2>Search Results</h2>
+
+            {results[0] && (
+                <div className="single-avatar">
+                    <img src={results[0].owner.avatar_url} alt={`${results[0].owner.login}'s avatar`} className="avatar" />
+                </div>
+            )}
+
             <ul>
                 {paginatedResults.map((result) => (
                     <li key={result.id}>
@@ -35,6 +42,7 @@ const Results = () => {
                     </li>
                 ))}
             </ul>
+
             <Button onClick={goBackToSearch}> Back to Search</Button>
 
             <Stack spacing={2}>
@@ -50,3 +58,4 @@ const Results = () => {
 }
 
 export default Results;
+
