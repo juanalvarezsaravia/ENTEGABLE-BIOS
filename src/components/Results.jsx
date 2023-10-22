@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { SearchContext } from '../SearchContext';
+import Button from './Button';
 
 const Results = () => {
     const { results } = useContext(SearchContext);
@@ -24,7 +25,7 @@ const Results = () => {
                     </li>
                 ))}
             </ul>
-            <button onClick={goBackToSearch}>Back to Search</button>
+            <Button onClick={goBackToSearch}> Back to Search</Button>
 
 
         </div>

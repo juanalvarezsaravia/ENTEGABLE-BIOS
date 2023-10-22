@@ -1,6 +1,7 @@
 import React from 'react'
 import TextField from '@mui/material/TextField';
 import { useNavigate } from 'react-router-dom';
+import Button from './Button';
 
 const Login = () => {
     const navigate = useNavigate();
@@ -25,9 +26,9 @@ const Login = () => {
                     type='password'
                     size="small"
                 />
-                <button>Enviar</button>
+                <Button type="submit">Enviar</Button>
             </form>
-            <button onClick={goBackToSearch}>Back to Search</button>
+            <Button onClick={goBackToSearch}> Back to Search</Button>
         </div>
 
     )

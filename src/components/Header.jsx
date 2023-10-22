@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import Button from './Button';
 
 const Header = () => {
     const navigate = useNavigate();
@@ -8,10 +9,10 @@ const Header = () => {
         <header className="header">
             <h1>GitHub Search App</h1>
             <nav>
-                <button onClick={() => navigate('/about')}>Nosotros</button>
-                <button onClick={() => navigate('/contact')}>Contacto</button>
-                <button onClick={() => navigate('/login')}>Iniciar sesión</button>
-                <button onClick={() => navigate('/register')}>Registrarse</button>
+                <Button onClick={() => navigate('/about')}> Nosotros</Button>
+                <Button onClick={() => navigate('/contact')}> Contacto</Button>
+                <Button onClick={() => navigate('/login')}> Iniciar sesion</Button>
+                <Button onClick={() => navigate('/register')}> Registrarse</Button>
             </nav>
         </header>
     );

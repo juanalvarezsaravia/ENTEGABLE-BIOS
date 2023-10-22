@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import Button from './Button';
 
 const Details = () => {
   const { id } = useParams();
@@ -40,8 +41,8 @@ const Details = () => {
       <h3>{repoDetails.name}</h3>
       <p>{repoDetails.description}</p>
       <p>Stars: {repoDetails.stargazers_count}</p>
-      <button onClick={goBackToResults}>Back to Results</button>
-      <button onClick={goToGitHubRepository}>Go to GitHub</button>
+      <Button onClick={goBackToResults}> Back to Search</Button>
+      <Button onClick={goToGitHubRepository}> Go to GitHub</Button>
     </div>
   );
 };

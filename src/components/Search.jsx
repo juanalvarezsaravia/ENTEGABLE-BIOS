@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { SearchContext } from '../SearchContext';
-
+import Button from './Button';
 
 const Search = () => {
   const [username, setUsername] = useState('');
@@ -28,7 +28,7 @@ const Search = () => {
         value={username}
         onChange={(e) => setUsername(e.target.value)}
       />
-      <button onClick={handleSearch}>SEARCH</button>
+      <Button onClick={handleSearch}> SEARCH</Button>
     </div>
   );
 }

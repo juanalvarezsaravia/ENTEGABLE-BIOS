@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import CallIcon from '@mui/icons-material/Call';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import MailIcon from '@mui/icons-material/Mail';
+import Button from './Button';
 
 const Contact = () => {
     const navigate = useNavigate();
@@ -24,7 +25,7 @@ const Contact = () => {
             <LocationOnIcon />
             <p>Dirección</p>
             <p>Av.Italia 1987</p>
-            <button onClick={goBackToSearch}>Back to Search</button>
+            <Button onClick={goBackToSearch}> Back to Search</Button>
         </div>
     );
 };
