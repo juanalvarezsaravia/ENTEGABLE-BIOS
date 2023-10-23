@@ -12,23 +12,25 @@ const Search = () => {
 
   const handleSearch = async () => {
     try {
-      let url = `https://api.github.com/users/${username}/repos`;
+      let query = `https://api.github.com/search/repositories?q=`;
+
+      if (username) {
+        query += `user:${username}+`;
+      }
 
       if (language) {
-        url += `?language=${language}`;
-      }
-      if (sortBy === 'updated') {
-        url += `?sort=updated`;
-      }
-      if (sortBy === 'stars') {
-        url += `?sort=stars`;
+        query += `language:${language}+`;
       }
 
-      const response = await axios.get(url);
-      setResults(response.data);
+      if (sortBy) {
+        query += `&sort=${sortBy}`;
+      }
+
+      const response = await axios.get(query);
+      setResults(response.data.items);
       navigate(`/results`);
     } catch (error) {
-      alert('A ocurrido un error.');
+      alert('An error occurred.');
     }
   };
 
@@ -61,4 +63,3 @@ const Search = () => {
 }
 
 export default Search;
-
