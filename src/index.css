@@ -44,6 +44,8 @@ a {
   gap: 25px;
 }
 
+
+
 button {
   cursor: pointer;
   border-radius: 5px;
@@ -56,7 +58,6 @@ input {
   padding: 5px;
 }
 
-
 header {
   background-color: white;
   text-align: center;
@@ -66,8 +67,6 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-
-
 
 .AppContainer {
   display: grid;
@@ -158,7 +157,7 @@ header {
   margin-bottom: 15px;
 }
 
-.Login button {
+.Login Button {
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
@@ -168,50 +167,23 @@ header {
   transition: background-color 0.3s ease;
 }
 
-.Login button:hover {
+.Login Button:hover {
   background-color: #09f03b;
 }
 
-.Login button:last-of-type {
+.Login Button:last-of-type {
   margin-top: 10px;
 }
 
-@media only screen and (max-width: 767px) {
-
-  .Register,
-  .Login {
-    width: 90%;
-    margin: 20px auto;
-  }
-
-  header {
-    flex-direction: column;
-    height: auto;
-    padding: 10px;
-  }
-
-  .Details,
-  .Search,
-  .Results,
-  .About,
-  .Contact {
-    gap: 15px;
-  }
-
-  button,
-  input {
-    padding: 10px;
-    font-size: 16px;
-    width: 100%;
-  }
-
-  .Register button,
-  .Login button,
-  .About button,
-  .Contact button {
-    width: auto;
-  }
+.Login svg {
+  color: white;
 }
+
+.white-eye-icon svg {
+  color: white;
+}
+
+
 
 .Contact {
   width: 300px;
@@ -249,7 +221,6 @@ header {
 .Contact button:hover {
   background-color: #09f03b;
 }
-
 
 .Contact svg {
   fill: #47925e;
@@ -292,4 +263,69 @@ header {
 
 .About button:hover {
   background-color: #09f03b;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+}
+
+.imagen {
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+  header {
+    flex-direction: column;
+    padding: 10px 0;
+    height: auto;
+    align-items: center;
+  }
+
+  .AppContainer {
+    padding: 0 10px;
+  }
+
+  .Details,
+  .Search,
+  .Results,
+  .About,
+  .Contact {
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .Register,
+  .Login,
+  .Contact,
+  .About {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .Register button,
+  .Login Button,
+  .Contact button,
+  .About button {
+    width: 100%;
+  }
+
+  .Footer h3 {
+    font-size: 14px;
+  }
+
+  button,
+  input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+  }
+
 }
