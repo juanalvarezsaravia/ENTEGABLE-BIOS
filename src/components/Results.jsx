@@ -23,7 +23,7 @@ const Results = () => {
         : paginatedResults;
 
     if (!results || results.length === 0) {
-        return <div>No results found.</div>;
+        return <div>No se encontraron resultados.</div>;
     }
 
     const goBackToSearch = () => {
@@ -36,7 +36,7 @@ const Results = () => {
 
     return (
         <div className='Results'>
-            <h2>Search Results</h2>
+            <h2>RESULTADOS DE BUSQUEDA</h2>
 
             {results[0] && (
                 <div className="single-avatar">
@@ -47,11 +47,11 @@ const Results = () => {
 
             <input
                 type="text"
-                placeholder="Filter by repository name"
+                placeholder="Filtrar nombre de repositorio"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
             />
-            <Button onClick={() => setSearchTerm('')}>Clear Filter</Button>
+            <Button onClick={() => setSearchTerm('')}>Limpiar Filtros</Button>
 
             <ul>
                 {filteredResults.map((result) => (
@@ -61,7 +61,7 @@ const Results = () => {
                 ))}
             </ul>
 
-            <Button onClick={goBackToSearch}> Back to Search</Button>
+            <Button onClick={goBackToSearch}> Volver</Button>
 
             <Stack spacing={2}>
                 <Typography>Page: {page}</Typography>

@@ -7,7 +7,7 @@ const Header = () => {
 
     return (
         <header className="header">
-            <h1>GitHub Search App</h1>
+            <h1>Buscador GitHub</h1>
             <nav>
                 <Button onClick={() => navigate('/about')}> Nosotros</Button>
                 <Button onClick={() => navigate('/contact')}> Contacto</Button>

@@ -36,28 +36,28 @@ const Search = () => {
 
   return (
     <div className='Search'>
-      <h1>SEARCH</h1>
+      <h1>BUSCADOR</h1>
       <input
         type="text"
-        placeholder="Enter GitHub Username"
+        placeholder="Search"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
       />
 
       <select value={language} onChange={(e) => setLanguage(e.target.value)}>
-        <option value="">Select Language</option>
+        <option value="">Elija Lenguaje</option>
         <option value="JavaScript">JavaScript</option>
         <option value="Python">Python</option>
         <option value="Java">Java</option>
       </select>
 
       <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
-        <option value="">Sort By</option>
-        <option value="updated">Recently Updated</option>
-        <option value="stars">Stars</option>
+        <option value="">Odenar por</option>
+        <option value="updated">Recientemente Actualizado</option>
+        <option value="stars">Estrellas</option>
       </select>
 
-      <Button onClick={handleSearch}> SEARCH</Button>
+      <Button onClick={handleSearch}> Buscar</Button>
     </div>
   );
 }

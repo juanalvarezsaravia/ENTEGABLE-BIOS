@@ -37,7 +37,7 @@ const Details = () => {
 
   return (
     <div className='Details'>
-      <h2>Repository Details</h2>
+      <h2>DETALLES</h2>
       {repoDetails.owner && (
         <div className="single-avatar">
           <img src={repoDetails.owner.avatar_url} alt={`${repoDetails.owner.login}'s avatar`} className="avatar" />
@@ -46,8 +46,8 @@ const Details = () => {
       <h3>{repoDetails.name}</h3>
       <p>{repoDetails.description}</p>
       <p>Stars: {repoDetails.stargazers_count}</p>
-      <Button onClick={goBackToResults}> Back to Search</Button>
-      <Button onClick={goToGitHubRepository}> Go to GitHub</Button>
+      <Button onClick={goBackToResults}> Volver</Button>
+      <Button onClick={goToGitHubRepository}> Ir a GitHub</Button>
     </div>
   );
 };
