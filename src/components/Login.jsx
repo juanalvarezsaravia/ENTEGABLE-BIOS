@@ -29,6 +29,11 @@ function Login() {
             <h2>Acceso</h2>
             <form action="">
                 <TextField
+                    label="Full Name"
+                    type='email'
+                    size="small"
+                />
+                <TextField
                     label="Email"
                     type='email'
                     size="small"
