@@ -183,6 +183,7 @@ header {
 
 .Login Button:last-of-type {
   margin-top: 10px;
+  color: var(--white);
 }
 
 .Login svg {
@@ -281,6 +282,23 @@ header {
   align-items: center;
   width: 150px;
   height: 150px;
+}
+
+
+nav button {
+  background-color: var(--darkgreen);
+  color: var(--white);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+nav Button:hover {
+  background-color: var(--lightgreen);
+
 }
 
 
