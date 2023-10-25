@@ -25,7 +25,7 @@ const Contact = () => {
             <LocationOnIcon />
             <p>Dirección</p>
             <p>Av.Italia 1987</p>
-            <Button onClick={goBackToSearch}> Back to Search</Button>
+            <Button onClick={goBackToSearch}> Volver</Button>
         </div>
     );
 };

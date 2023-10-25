@@ -36,7 +36,7 @@ const Register = () => {
                 <Button type="submit">Enviar</Button>
 
             </form>
-            <Button onClick={goBackToSearch}> Back to Search</Button>
+            <Button onClick={goBackToSearch}> Volver</Button>
 
         </div>
     )

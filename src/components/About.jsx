@@ -14,7 +14,7 @@ const About = () => {
         <div className='About'>
             <h2>About GitHub Search App</h2>
             <p>This app allows users to search for GitHub repositories using a username. Explore and find your favorite repositories here!</p>
-            <Button onClick={goBackToSearch}> Back to Search</Button>
+            <Button onClick={goBackToSearch}> Volver</Button>
         </div>
 
     );
