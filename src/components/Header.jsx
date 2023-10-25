@@ -12,7 +12,7 @@ const Header = () => {
                 <Button onClick={() => navigate('/about')}> Nosotros</Button>
                 <Button onClick={() => navigate('/contact')}> Contacto</Button>
                 <Button onClick={() => navigate('/login')}> Iniciar sesion</Button>
-                <Button onClick={() => navigate('/register')}> Registrarse</Button>
+
             </nav>
         </header>
     );
