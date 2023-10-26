@@ -6,6 +6,7 @@ import Search from "./components/Search";
 import Results from './components/Results';
 import Details from './components/Details';
 import Header from './components/Header';
+import Register from './components/Register';
 import Login from './components/Login';
 import Contact from './components/Contact';
 import About from './components/About';
@@ -22,6 +23,7 @@ function App() {
             <Route path="/" element={<Search />} />
             <Route path="/results" element={<Results />} />
             <Route path="/details/:id" element={<Details />} />
+            <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />

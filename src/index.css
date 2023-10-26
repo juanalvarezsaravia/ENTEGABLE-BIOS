@@ -151,6 +151,49 @@ header {
   color: var(--white);
 }
 
+.Register {
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px;
+  border-radius: 8px;
+  background-color: var(--white);
+}
+
+.Register h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: black;
+}
+
+.Register form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Register TextField {
+  margin-bottom: 15px;
+}
+
+.Register button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--darkgreen);
+  color: var(--white);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Register button:hover {
+  background-color: var(--lightgreen);
+}
+
+.Register button:last-of-type {
+  margin-top: 10px;
+}
 
 
 .Contact {
@@ -232,6 +275,7 @@ header {
 .About button:hover {
   background-color: var(--lightgreen);
 }
+
 
 .avatar {
   display: flex;
