@@ -1,10 +1,8 @@
 :root {
   --verde: rgb(5, 255, 5);
-  --grey: #555;
-  --white: #ffffff;
-  --yellow: #eff304;
   --darkgreen: #47925e;
   --lightgreen: #09f03b;
+  --yellow: #eff304;
 }
 
 
@@ -42,7 +40,7 @@ a {
   border: none;
   border-radius: 5px;
   background-color: var(--darkgreen);
-  color: var(--white);
+  color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -65,7 +63,7 @@ a {
   border: none;
   border-radius: 5px;
   background-color: var(--darkgreen);
-  color: var(--white);
+  color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -87,7 +85,7 @@ a {
   border: none;
   border-radius: 5px;
   background-color: var(--darkgreen);
-  color: var(--white);
+  color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -146,7 +144,7 @@ header {
   padding: 20px;
   border: 1px;
   border-radius: 8px;
-  background-color: var(--white);
+  background-color: white;
 }
 
 .Login h2 {
@@ -171,7 +169,7 @@ header {
   border: none;
   border-radius: 5px;
   background-color: var(--darkgreen);
-  color: var(--white);
+  color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -180,12 +178,9 @@ header {
   background-color: var(--lightgreen);
 }
 
-.Login Button:last-of-type {
+.Login button:last-of-type {
   margin-top: 10px;
-  color: var(--white);
 }
-
-
 
 .SignUp {
   width: 400px;
@@ -193,7 +188,7 @@ header {
   padding: 20px;
   border: 1px;
   border-radius: 8px;
-  background-color: var(--white);
+  background-color: white;
 }
 
 .SignUp h2 {
@@ -218,7 +213,7 @@ header {
   border: none;
   border-radius: 5px;
   background-color: var(--darkgreen);
-  color: var(--white);
+  color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -234,11 +229,11 @@ header {
 
 .Contact {
   width: 300px;
-  border: 1px solid var(--white);
+  border: 1px solid white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: var(--white);
+  background-color: white;
   margin: 0 auto;
   text-align: center;
 }
@@ -246,18 +241,18 @@ header {
 .Contact h2 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: var(--grey);
+  color: grey;
 }
 
 .Contact p {
   font-size: 16px;
   margin-bottom: 10px;
-  color: var(--grey);
+  color: grey;
 }
 
 .Contact button {
   background-color: var(--darkgreen);
-  color: var(--white);
+  color: white;
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
@@ -281,7 +276,7 @@ header {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: var(--white);
+  background-color: white;
   margin: 0 auto;
   text-align: center;
 }
@@ -289,18 +284,18 @@ header {
 .About h2 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: var(--grey);
+  color: grey;
 }
 
 .About p {
   font-size: 16px;
   margin: 10px 0;
-  color: var(--grey);
+  color: grey;
 }
 
 .About button {
   background-color: var(--darkgreen);
-  color: var(--white);
+  color: white;
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
@@ -324,7 +319,7 @@ header {
 
 nav button {
   background-color: var(--darkgreen);
-  color: var(--white);
+  color: white;
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
