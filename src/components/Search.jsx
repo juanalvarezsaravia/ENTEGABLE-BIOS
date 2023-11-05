@@ -47,8 +47,8 @@ const Search = () => {
       <select value={language} onChange={(e) => setLanguage(e.target.value)}>
         <option value="">Elija Lenguaje</option>
         <option value="JavaScript">JavaScript</option>
-        <option value="Python">Python</option>
-        <option value="Java">Java</option>
+        <option value="TypeScript">TypeScript</option>
+        <option value="CSS">CSS</option>
       </select>
 
       <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>

@@ -3,7 +3,7 @@ import TextField from '@mui/material/TextField';
 import { useNavigate } from 'react-router-dom';
 import Button from './Button';
 
-const SignUP = () => {
+const SignUp = () => {
     const navigate = useNavigate();
 
     const goBackToSearch = () => {
@@ -11,7 +11,7 @@ const SignUP = () => {
     };
 
     return (
-        <div className='Register'>
+        <div className='SignUp'>
             <h2>Registro</h2>
             <form >
                 <TextField

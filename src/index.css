@@ -187,7 +187,7 @@ header {
 
 
 
-.Register {
+.SignUp {
   width: 400px;
   margin: 50px auto;
   padding: 20px;
@@ -196,24 +196,24 @@ header {
   background-color: var(--white);
 }
 
-.Register h2 {
+.SignUp h2 {
   text-align: center;
   margin-bottom: 20px;
   font-size: 24px;
   color: black;
 }
 
-.Register form {
+.SignUp form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.Register TextField {
+.SignUp TextField {
   margin-bottom: 15px;
 }
 
-.Register button {
+.SignUp button {
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
@@ -223,11 +223,11 @@ header {
   transition: background-color 0.3s ease;
 }
 
-.Register button:hover {
+.SignUp button:hover {
   background-color: var(--lightgreen);
 }
 
-.Register button:last-of-type {
+.SignUp button:last-of-type {
   margin-top: 10px;
 }
 
@@ -359,7 +359,7 @@ nav Button:hover {
     padding: 20px;
   }
 
-  .Register,
+  .SignUp,
   .Login,
   .Contact,
   .About {
@@ -367,7 +367,7 @@ nav Button:hover {
     margin: 20px auto;
   }
 
-  .Register button,
+  .SignUp button,
   .Login Button,
   .Contact button,
   .About button {
