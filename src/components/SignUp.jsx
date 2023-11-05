@@ -3,7 +3,7 @@ import TextField from '@mui/material/TextField';
 import { useNavigate } from 'react-router-dom';
 import Button from './Button';
 
-const Register = () => {
+const SignUP = () => {
     const navigate = useNavigate();
 
     const goBackToSearch = () => {
@@ -28,11 +28,6 @@ const Register = () => {
                     type='password'
                     size="small"
                 />
-                <TextField
-                    label="Confirmar contraseña"
-                    type='password'
-                    size="small"
-                />
                 <Button type="submit">Enviar</Button>
 
             </form>
@@ -42,4 +37,4 @@ const Register = () => {
     )
 }
 
-export default Register;
+export default SignUp;

@@ -37,6 +37,20 @@ a {
   gap: 25px;
 }
 
+.Details Button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--darkgreen);
+  color: var(--white);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Details Button:hover {
+  background-color: var(--lightgreen);
+}
+
 .Search {
   display: flex;
   justify-content: center;
@@ -44,6 +58,20 @@ a {
   height: 100vh;
   flex-direction: column;
   gap: 25px;
+}
+
+.Search Button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--darkgreen);
+  color: var(--white);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Search Button:hover {
+  background-color: var(--lightgreen);
 }
 
 .Results {
@@ -54,7 +82,19 @@ a {
   gap: 25px;
 }
 
+.Results Button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--darkgreen);
+  color: var(--white);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
+.Results Button:hover {
+  background-color: var(--lightgreen);
+}
 
 button {
   cursor: pointer;
@@ -69,7 +109,7 @@ input {
 }
 
 header {
-  background-color: var(--white);
+  background-color: var(--verde);
   text-align: center;
   width: 100%;
   height: 80px;
@@ -77,6 +117,8 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+
+
 
 .AppContainer {
   display: grid;
@@ -143,13 +185,7 @@ header {
   color: var(--white);
 }
 
-.Login svg {
-  color: var(--white);
-}
 
-.white-eye-icon svg {
-  color: var(--white);
-}
 
 .Register {
   width: 400px;
@@ -301,9 +337,6 @@ nav Button:hover {
   background-color: var(--lightgreen);
 
 }
-
-
-
 
 @media only screen and (max-width: 767px) {
   header {
