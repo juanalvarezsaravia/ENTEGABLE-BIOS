@@ -1,7 +1,8 @@
 import React from 'react'
 import TextField from '@mui/material/TextField';
 import { useNavigate } from 'react-router-dom';
-import Button from './Button';
+import Button from '../../components/Button';
+import "./SignUp.css";
 
 const SignUp = () => {
     const navigate = useNavigate();

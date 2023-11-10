@@ -5,7 +5,6 @@
   --yellow: #eff304;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -19,85 +18,10 @@ body {
   background-color: greenyellow;
   height: 100%;
   margin: 0;
-
 }
 
 a {
   text-decoration: none;
-}
-
-.Details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  gap: 25px;
-}
-
-.Details Button {
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--darkgreen);
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.Details Button:hover {
-  background-color: var(--lightgreen);
-}
-
-.Search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
-  gap: 25px;
-}
-
-.Search Button {
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--darkgreen);
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.Search Button:hover {
-  background-color: var(--lightgreen);
-}
-
-.Results {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 25px;
-}
-
-.Results Button {
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--darkgreen);
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.Results Button:hover {
-  background-color: var(--lightgreen);
-}
-
-button {
-  cursor: pointer;
-  border-radius: 5px;
-  padding: 5px;
 }
 
 input {
@@ -106,207 +30,11 @@ input {
   padding: 5px;
 }
 
-header {
-  background-color: var(--verde);
-  text-align: center;
-  width: 100%;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
-
 .AppContainer {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
 }
-
-.Footer {
-  background-color: var(--verde);
-  padding: 20px 0;
-  text-align: center;
-  width: 100%;
-  font-size: 16px;
-}
-
-.Footer h3 {
-  margin: 0;
-  font-weight: bold;
-}
-
-
-.Login {
-  width: 350px;
-  margin: 50px auto;
-  padding: 20px;
-  border: 1px;
-  border-radius: 8px;
-  background-color: white;
-}
-
-.Login h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 24px;
-  color: black;
-}
-
-.Login form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.Login TextField {
-  margin-bottom: 15px;
-}
-
-.Login Button {
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--darkgreen);
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.Login Button:hover {
-  background-color: var(--lightgreen);
-}
-
-.Login button:last-of-type {
-  margin-top: 10px;
-}
-
-.SignUp {
-  width: 400px;
-  margin: 50px auto;
-  padding: 20px;
-  border: 1px;
-  border-radius: 8px;
-  background-color: white;
-}
-
-.SignUp h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 24px;
-  color: black;
-}
-
-.SignUp form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.SignUp TextField {
-  margin-bottom: 15px;
-}
-
-.SignUp button {
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--darkgreen);
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.SignUp button:hover {
-  background-color: var(--lightgreen);
-}
-
-.SignUp button:last-of-type {
-  margin-top: 10px;
-}
-
-
-.Contact {
-  width: 300px;
-  border: 1px solid white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: white;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.Contact h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: black;
-}
-
-.Contact p {
-  font-size: 16px;
-  margin-bottom: 10px;
-  color: black;
-}
-
-.Contact button {
-  background-color: var(--darkgreen);
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.Contact button:hover {
-  background-color: var(--lightgreen);
-}
-
-.Contact svg {
-  fill: var(--yellow);
-  width: 24px;
-  height: 24px;
-  margin-bottom: 10px;
-}
-
-.About {
-  width: 400px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: white;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.About h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: black;
-}
-
-.About p {
-  font-size: 16px;
-  margin: 10px 0;
-  color: black;
-}
-
-.About button {
-  background-color: var(--darkgreen);
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.About button:hover {
-  background-color: var(--lightgreen);
-}
-
 
 .avatar {
   display: flex;
@@ -314,23 +42,6 @@ header {
   align-items: center;
   width: 150px;
   height: 150px;
-}
-
-
-nav button {
-  background-color: var(--darkgreen);
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-right: 10px;
-}
-
-nav Button:hover {
-  background-color: var(--lightgreen);
-
 }
 
 @media only screen and (max-width: 767px) {
@@ -362,10 +73,7 @@ nav Button:hover {
     margin: 20px auto;
   }
 
-  .SignUp button,
-  .Login Button,
-  .Contact button,
-  .About button {
+  button {
     width: 100%;
   }
 

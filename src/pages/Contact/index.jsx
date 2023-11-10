@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import CallIcon from '@mui/icons-material/Call';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import MailIcon from '@mui/icons-material/Mail';
-import Button from './Button';
+import Button from '../../components/Button';
+import "./Contact.css";
 
 const Contact = () => {
     const navigate = useNavigate();
@@ -31,4 +32,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

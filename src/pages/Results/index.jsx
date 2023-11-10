@@ -1,10 +1,11 @@
 import React, { useState, useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { SearchContext } from '../SearchContext';
-import Button from './Button';
+import { SearchContext } from '../../SearchContext';
+import Button from '../../components/Button';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
+import "./Results.css";
 
 const Results = () => {
     const { results } = useContext(SearchContext);

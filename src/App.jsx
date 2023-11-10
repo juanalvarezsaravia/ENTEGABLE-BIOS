@@ -2,14 +2,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { SearchProvider } from './SearchContext';
-import Search from "./components/Search";
-import Results from './components/Results';
-import Details from './components/Details';
+import Search from "./pages/Search";
+import Results from './pages/Results';
+import Details from './pages/Details';
 import Header from './components/Header';
-import SignUp from './components/SignUp';
-import Login from './components/Login';
-import Contact from './components/Contact';
-import About from './components/About';
+import SignUp from './pages/SignUp';
+import Login from './pages/Login';
+import Contact from './pages/Contact';
+import About from './pages/About';
 import Footer from './components/Footer';
 
 
