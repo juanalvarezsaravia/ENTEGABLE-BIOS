@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { SearchContext } from '../../SearchContext';
+import { AuthProvider } from '../context/AuthUser';
 import Button from '../../components/Button';
 import "./Search.css";
 

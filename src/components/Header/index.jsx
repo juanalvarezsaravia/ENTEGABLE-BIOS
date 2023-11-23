@@ -10,8 +10,6 @@ const Header = () => {
         <header className="header">
             <h1>Buscador GitHub</h1>
             <nav>
-                <Button onClick={() => navigate('/about')}> Nosotros</Button>
-                <Button onClick={() => navigate('/contact')}> Contacto</Button>
                 <Button onClick={() => navigate('/login')}> Iniciar sesion</Button>
                 <Button onClick={() => navigate('/signUp')}> Registrarse</Button>
             </nav>

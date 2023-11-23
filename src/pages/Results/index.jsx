@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { SearchContext } from '../../SearchContext';
+import { AuthProvider } from '../context/AuthUser';
 import Button from '../../components/Button';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';

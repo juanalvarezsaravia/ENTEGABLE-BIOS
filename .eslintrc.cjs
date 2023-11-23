@@ -16,5 +16,7 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    'no-async-promise-executor': 'off',
+    'react/prop-types': 'off',
   },
 }
